@@ -3,4 +3,4 @@ Server management project
 
 ---
 
-Tänne keksitään miniprijektin aiheet ja kirjataan tulokset :DDD
+Tänne keksitään miniprojektin aiheet ja kirjataan tulokset :DDD
