@@ -1,2 +1,2 @@
 # Miniprojekti
-Palvelinten hallinta kurssin projekti
+Server management project
