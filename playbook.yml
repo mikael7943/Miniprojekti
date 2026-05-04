@@ -1,0 +1,8 @@
+- name: setup development environment
+  hosts: dev
+  become: true
+
+  roles:
+    - common
+    - node
+    - docker
