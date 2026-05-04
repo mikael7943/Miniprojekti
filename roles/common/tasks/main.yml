@@ -1,0 +1,11 @@
+- name: update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install basic packages
+  apt:
+    name:
+      - git
+      - curl
+      - vim
+    state: present
