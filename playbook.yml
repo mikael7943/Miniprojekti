@@ -1,5 +1,4 @@
-- name: setup development environment
-  hosts: dev
+- hosts: all
   become: true
 
   roles:
