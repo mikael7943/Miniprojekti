@@ -16,6 +16,7 @@
 
 ## Projektin esivalmiudet
 - git asennettuna master koneelle
+  https://git-scm.com/install/linux
 - ansible asennettuna master koneelle
 - tiedossa agent koneen IP osoite ja koneet saavat  _ping_ ja _ssh_ yhetyden toisiinsa
 ## Miten asentaa
