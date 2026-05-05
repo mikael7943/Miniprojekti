@@ -130,5 +130,6 @@ https://docs.ansible.com/
 
 https://wiki.debian.org/SivuHaku
 
+Virtuaalikoneeseen yhdistämisessä käytimme copilottia ongelmien ratkaisussa
 
 
