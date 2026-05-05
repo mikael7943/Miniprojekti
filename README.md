@@ -111,12 +111,19 @@ Koko ansiblen rakenne:
 
 ---
 
-ansible1  
+Ensimmäinen ansible ajo lataa kaiken halutun target-koneelle
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215307" src="https://github.com/user-attachments/assets/13d16370-ad13-4250-8e9d-3d844f87233b" />  
-ansible2  
+Toinen ajolla tarkistetaan idemotenssi
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215334" src="https://github.com/user-attachments/assets/2bb19437-ab7c-4c68-9b68-2601769fcf76" />  
-docker  
+Testaus target-tietokoneelle, että toimiiko asennetut ohjelmat
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215726" src="https://github.com/user-attachments/assets/490ca39c-6588-4886-8910-5ef8da162ecb" />  
+
+
+
+LÄHTEET:
+https://terokarvinen.com/
+https://docs.ansible.com/
+https://wiki.debian.org/SivuHaku
 
 
 
