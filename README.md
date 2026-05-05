@@ -14,3 +14,8 @@
 ## Projektin rakenne
 Koko ansiblen rakenne:  
 <img width="522" height="341" alt="image" src="https://github.com/user-attachments/assets/d2702a73-d1e3-49ff-9eb2-cab7fee786b2" />  
+
+
+
+<img width="1170" height="584" alt="Näyttökuva 2026-05-05 215307" src="https://github.com/user-attachments/assets/13d16370-ad13-4250-8e9d-3d844f87233b" />
+
