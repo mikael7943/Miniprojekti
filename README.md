@@ -3,4 +3,5 @@ Server management project
 
 ---
 
-Tänne keksitään miniprojektin aiheet ja kirjataan tulokset :DDD
+Kehitysympäristön automaattinen asennus ansiblella. Projektissa loimme playbookin, joka ohjelmat Git, Node.js ja Dockerin automaattisesti uudelle tietokoneelle
+
