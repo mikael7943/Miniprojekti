@@ -39,14 +39,15 @@ Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää 
 4.	Asenna ssh agent-tietokoneelle ja kokeile toimivuus.
 
 5.	Konfiguroi agent-tietokone, että sudo toimii ilman salasanaa
+      - https://terokarvinen.com/passwordless-sudo/?fromSearch=password
 
-6.	Luo ssh-avainpari ja kopioi se, jotta master-tietokone pääsee kirjautumaan ilman salasanaa agent-tietokoneelle.
+7.	Luo ssh-avainpari ja kopioi se, jotta master-tietokone pääsee kirjautumaan ilman salasanaa agent-tietokoneelle.
 
-7.	Lisää agent-tietokone inventory.ini tiedostoon master-tietokoneella. 
+8.	Lisää agent-tietokone inventory.ini tiedostoon master-tietokoneella. 
 
-8.	Voit kokeilla toimivuutta ping komennolla ansible -i inventory.ini dev -m ping
+9.	Voit kokeilla toimivuutta ping komennolla ansible -i inventory.ini dev -m ping
 
-9.	Aja komento ansible-playbook -i inventory.ini playbook.yml
+10.	Aja komento ansible-playbook -i inventory.ini playbook.yml
 
 ## Projektin rakenne
 Koko ansiblen rakenne:  
