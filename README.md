@@ -32,6 +32,7 @@ Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää 
 
 1.	Vaihda master-tietotokeen ja agent-tietokoneen verkkoasetukset virtualboxista.
    -Adapter 1: laita Host-only Adapter
+  	
    -Adapter 2: NAT
 
 3.	Hae agent-tietokoneen ip-osoite komennolla ip a.
