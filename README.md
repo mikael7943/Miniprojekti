@@ -31,9 +31,8 @@ Kun kloonaus on onnistunut muista tarkistaa että **_inventory.ini_** tiedostoss
 Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää sinun tehdä seuraavat askeleet:
 
 1.	Vaihda master-tietotokeen ja agent-tietokoneen verkkoasetukset virtualboxista.
-   -Adapter 1: laita Host-only Adapter
-  	
-   -Adapter 2: NAT
+   *Adapter 1: laita Host-only Adapter
+  	*Adapter 2: NAT
 
 3.	Hae agent-tietokoneen ip-osoite komennolla ip a.
 
