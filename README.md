@@ -133,6 +133,8 @@ https://docs.ansible.com/
 
 https://wiki.debian.org/SivuHaku
 
+https://docs.docker.com/get-started/
+
 Virtuaalikoneeseen yhdistämisessä käytimme copilottia ongelmien ratkaisussa
 
 
