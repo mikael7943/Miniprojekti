@@ -50,6 +50,8 @@ Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää 
 Koko ansiblen rakenne:  
 <img width="522" height="341" alt="image" src="https://github.com/user-attachments/assets/d2702a73-d1e3-49ff-9eb2-cab7fee786b2" />  
 
+---
+
 ### /roles/common/tasks/main.yml
 - Suurin osa perusohjelmien latauksesta tapahtuu täällä
 - Päivittää pakettivaraston
