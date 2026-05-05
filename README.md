@@ -113,8 +113,7 @@ Koko ansiblen rakenne:
     state: present
 
 ```
-
----
+## Ansiblella ajot ja projektin toimivuuden testaus
 
 - Ensimmäinen ansible ajo lataa kaiken halutun target-koneelle  
 
