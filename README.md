@@ -8,9 +8,11 @@
    - Curl
    - Vim
    - Docker
-      - Antaa mahdollisuuden rakentaa "kontteja" jotka toimivat samalla tavalla kuin virtuaalikoneet mutta luovat vain "hiekkalaatikkomaisen" ympäristön ei koko konetta  
+      - Antaa mahdollisuuden rakentaa "kontteja" jotka toimivat samalla tavalla kuin virtuaalikoneet             mutta luovat vain "hiekkalaatikkomaisen" ympäristön ei koko konetta  
    - Node.js
       - Antaa kehittäjille mahdollisuuden luoda ja käyttää Javascript koodia
+   - npm
+      - Node Package Manager, jolla hallitaan JavaScript-paketteja
 
 ## Projektin esivalmiudet
 - git asennettuna master koneelle
@@ -48,10 +50,70 @@ Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää 
 Koko ansiblen rakenne:  
 <img width="522" height="341" alt="image" src="https://github.com/user-attachments/assets/d2702a73-d1e3-49ff-9eb2-cab7fee786b2" />  
 
+### /roles/common/tasks/main.yml
+- Suurin osa perusohjelmien latauksesta tapahtuu täällä
+- Päivittää pakettivaraston
+```YAML
+- name: update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install basic packages
+  apt:
+     name:
+       - git
+       - curl
+       - vim
+     state: present
+```
+---
+### /roles/docker/tasks/main.yml
+- Asennetaan docker sen viimeisimpään versioon
+- Käynnistetään docker ja laitetaan se käynnistymään aina koneen mukana
+- Lisätään käyttäjä docker ryhmään jotta pystyy ajamaan docker komentoja ilman sudo oikeuksia
+
+  ```YAML
+  - name: Install Docker
+    apt:
+      name: docker.io
+      state: present
+
+  - name: Start Docker service
+    service:
+      name: docker
+      state: started
+      enabled: true
+
+  - name: Add user to docker group
+    user:
+      name: "{{ ansible_user_id}}"
+      groups: docker
+      append: yes
+
+  ```
+---
+### /roles/node/tasks/main.yml
+- Asentaa node.js
+- Asentaa npm
+```YAML
+- name: Install Node.js
+  apt:
+    name: nodejs
+    state: present
+- name: Install npm
+  apt:
+    name: npm
+    state: present
+
+```
+
+---
+
+ansible1  
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215307" src="https://github.com/user-attachments/assets/13d16370-ad13-4250-8e9d-3d844f87233b" />  
-
+ansible2  
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215334" src="https://github.com/user-attachments/assets/2bb19437-ab7c-4c68-9b68-2601769fcf76" />  
-
+docker  
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215726" src="https://github.com/user-attachments/assets/490ca39c-6588-4886-8910-5ef8da162ecb" />  
 
 
