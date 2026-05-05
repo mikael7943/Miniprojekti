@@ -28,23 +28,24 @@ Kun kloonaus on onnistunut muista tarkistaa että **_inventory.ini_** tiedostoss
 
 Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää sinun tehdä seuraavat askeleet:
 
-1.	Vaihda host-tietotokeen ja target-tietokoneen verkkoasetukset virtualboxista.
+1.	Vaihda master-tietotokeen ja agent-tietokoneen verkkoasetukset virtualboxista.
    Adapter 1: laita Host-only Adapter
+  	
    Adapter 2: NAT
 
-2.	Hae target-tietokoneen ip-osoite komennolla ip a.
+3.	Hae agent-tietokoneen ip-osoite komennolla ip a.
 
-3.	Asenna ssh target-tietokoneelle ja kokeile toimivuus.
+4.	Asenna ssh agent-tietokoneelle ja kokeile toimivuus.
 
-4.	Konfiguroi target-tietokone, että sudo toimii ilman salasanaa
+5.	Konfiguroi agent-tietokone, että sudo toimii ilman salasanaa
 
-5.	Luo ssh-avainpari ja kopioi se, jotta host-tietokone pääsee kirjautumaan ilman salasanaa target-tietokoneelle.
+6.	Luo ssh-avainpari ja kopioi se, jotta master-tietokone pääsee kirjautumaan ilman salasanaa agent-tietokoneelle.
 
-6.	Lisää target-tietokone inventory.ini tiedostoon host-tietokoneella. 
+7.	Lisää agent-tietokone inventory.ini tiedostoon master-tietokoneella. 
 
-7.	Voit kokeilla toimivuutta ping komennolla ansible -i inventory.ini dev -m ping
+8.	Voit kokeilla toimivuutta ping komennolla ansible -i inventory.ini dev -m ping
 
-8.	Aja komento ansible-playbook -i inventory.ini playbook.yml
+9.	Aja komento ansible-playbook -i inventory.ini playbook.yml
 
 ## Projektin rakenne
 Koko ansiblen rakenne:  
