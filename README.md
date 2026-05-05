@@ -1,7 +1,5 @@
 # Miniprojekti
-Server management project
+## Server management project
 
----
-
-Kehitysympäristön automaattinen asennus ansiblella. Projektissa loimme playbookin, joka ohjelmat Git, Node.js ja Dockerin automaattisesti uudelle tietokoneelle
+### Kehitysympäristön automaattinen asennus ansiblella. Projektissa loimme playbookin, joka ohjelmat Git, Node.js ja Dockerin automaattisesti uudelle tietokoneelle
 
