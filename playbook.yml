@@ -1,5 +1,5 @@
-- hosts: all
-  become: true
+- hosts: dev
+  become: yes
 
   roles:
     - common
