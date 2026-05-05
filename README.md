@@ -37,8 +37,9 @@ Mikäli haluat kokeilla ajaa playbookin toisella virtuaalitietokoneella pitää 
 3.	Hae agent-tietokoneen ip-osoite komennolla ip a.
 
 4.	Asenna ssh agent-tietokoneelle ja kokeile toimivuus.
+      -https://terokarvinen.com/ssh-public-key-login-without-password/
 
-5.	Konfiguroi agent-tietokone, että sudo toimii ilman salasanaa
+6.	Konfiguroi agent-tietokone, että sudo toimii ilman salasanaa
       - https://terokarvinen.com/passwordless-sudo/?fromSearch=password
 
 7.	Luo ssh-avainpari ja kopioi se, jotta master-tietokone pääsee kirjautumaan ilman salasanaa agent-tietokoneelle.
