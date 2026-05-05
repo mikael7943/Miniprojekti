@@ -121,7 +121,7 @@ Koko ansiblen rakenne:
 
 ---
 
-- Toinen ajolla tarkistetaan idempotenssi  
+- Toisella ajolla tarkistetaan idempotenssi  
 
 <img width="522" height="341" alt="Näyttökuva 2026-05-05 215334" src="https://github.com/user-attachments/assets/2bb19437-ab7c-4c68-9b68-2601769fcf76" /> 
 
