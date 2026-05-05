@@ -122,7 +122,9 @@ Testaus target-tietokoneelle, että toimiiko asennetut ohjelmat
 
 LÄHTEET:
 https://terokarvinen.com/
+
 https://docs.ansible.com/
+
 https://wiki.debian.org/SivuHaku
 
 
