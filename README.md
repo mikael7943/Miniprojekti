@@ -20,6 +20,7 @@
 - ansible asennettuna master koneelle
   https://terokarvinen.com/hello-ansible/?fromSearch=ansible
 - tiedossa agent koneen IP osoite ja koneet saavat  _ping_ ja _ssh_ yhetyden toisiinsa
+  - IP osoitteen saa selville kun antaa komennon **_ip a_** 
 ## Miten asentaa
 Kloonaa tämä repositio seuraavalla comennolla 
 ```
